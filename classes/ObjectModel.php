@@ -907,12 +907,12 @@ abstract class ObjectModelCore
 					continue;
 
 				$message = $this->validateField($field, $value, $id_lang);
-				if ($message !== true)
-				{
-					if ($die)
-						throw new PrestaShopException($message);
-					return $error_return ? $message : false;
-				}
+				// if ($message !== true)
+				// {
+				// 	if ($die)
+				// 		throw new PrestaShopException($message);
+				// 	return $error_return ? $message : false;
+				// }
 			}
 		}
 
