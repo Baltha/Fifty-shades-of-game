@@ -3,6 +3,9 @@
 .sf-menu > li > a, .shopping_cart > a:first-child:before{
   color: #fff !important;
 }
+#homepage-slider{
+  height: 466px;
+}
 #homepage-slider .homeslider-description{
   width: 300px;
 }
@@ -32,6 +35,39 @@
 #cmsinfo_block em{
     background: #1a4e66 !important;
     margin: 3px 20px 0 0 !important;
+}
+#cmsinfo_block h4{
+    font-size: 1.2em;
+}
+#news_title{
+  margin-top: 50px !important;
+  font-size: 1.2em !important;
+}
+.newsletter-input{
+  margin-right: 0px !important;
+  border: none !important;
+  outline: none !important;
+}
+.newsletter-input:focus{
+  background-color: #fff;
+  outline: none !important;
+}
+#columns #newsletter_block_left .form-group{
+  max-width: 249px;
+  border: 1px solid #d6d4d4;
+}
+.form-group .icon-envelope-alt{
+    border: none;
+    height: 27px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    background-color: #fff;
+    color: #828282;
+}
+.newsletter-input:placeholder{content: 'Saisissez votre email';}
+
+#homepage-slider .bx-wrapper .bx-controls-direction a:after{
+  padding-top: 26px !important;
 }
 /*
 

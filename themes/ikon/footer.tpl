@@ -40,17 +40,17 @@
 {/if}
 {include file="$tpl_dir./global.tpl"}
 
-	// <script>
-	// (function(){						
-	// 		$('.toggle-link-open').click(function(){		
-	// 			$('.footer-container').slideDown(500,"easeOutBounce").delay(100);
-	// 		});		
-	// })();
-	// (function(){						
-	// 		$('.toggle-link-close').click(function(){		
-	// 			$('.footer-container').slideUp(500,"easeOutBounce").delay(100);
-	// 		});		
-	// })();
-	// </script>
+	 <script>
+	 (function(){						
+			$('.toggle-link-open').click(function(){		
+				$('.footer-container').slideDown(500,"easeOutBounce").delay(100);
+			});		
+	})();
+	(function(){						
+			$('.toggle-link-close').click(function(){		
+				$('.footer-container').slideUp(500,"easeOutBounce").delay(100);
+			});		
+	})();
+	 </script>
 	</body>
 </html>
