@@ -49,21 +49,22 @@
 		<li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-4{/if}{if $smarty.foreach.products.iteration%$nbItemsPerLine == 0} last-in-line{elseif $smarty.foreach.products.iteration%$nbItemsPerLine == 1} first-in-line{/if}{if $smarty.foreach.products.iteration > ($smarty.foreach.products.total - $totModulo)} last-line{/if}{if $smarty.foreach.products.iteration%$nbItemsPerLineTablet == 0} last-item-of-tablet-line{elseif $smarty.foreach.products.iteration%$nbItemsPerLineTablet == 1} first-item-of-tablet-line{/if}{if $smarty.foreach.products.iteration%$nbItemsPerLineMobile == 0} last-item-of-mobile-line{elseif $smarty.foreach.products.iteration%$nbItemsPerLineMobile == 1} first-item-of-mobile-line{/if}{if $smarty.foreach.products.iteration > ($smarty.foreach.products.total - $totModuloMobile)} last-mobile-line{/if}">
 			<div class="product-container" itemscope itemtype="http://schema.org/Product">
 				<div class="left-block">
+
 					<div class="product-image-container">
 						<a class="product_img_link"	href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}" itemprop="url">
 							<img class="replace-2x img-responsive" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" title="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} itemprop="image" />
 						</a>
-						{if isset($quick_view) && $quick_view}
-							<a class="quick-view" href="{$product.link|escape:'html':'UTF-8'}" rel="{$product.link|escape:'html':'UTF-8'}">
-								<span>{l s='Quick view'}</span>
-							</a>
-						{/if}
+						<div class="black_bc">
+
+						</div>
 						{if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 							<div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 								{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}
-									<span itemprop="price" class="price product-price">
-										{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
-									</span>
+									<a href="{$link->getPageLink('cart',false, NULL, "add=1&amp;id_product={$product.id_product|intval}&amp;token={$static_token}", false)|escape:'html':'UTF-8'}">
+										<span itemprop="price" class="price product-price">
+											{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
+										</span>
+									</a>
 									<meta itemprop="priceCurrency" content="{$priceDisplay}" />
 									{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}
 										<span class="old-price product-price">
@@ -95,6 +96,12 @@
 							{$product.name|truncate:45:'...'|escape:'html':'UTF-8'}
 						</a>
 					</h5>
+					{if $product.id_supplier}
+					<img class="supplier_logo" src="{$img_sup_dir}{$product.id_supplier|escape:'htmlall':'UTF-8'}.jpg" alt="{$product.supplier_name|escape:'htmlall':'UTF-8'}" width="56" height="27" />
+					{/if}
+					<a itemprop="url" class="lnk_view" href="{$product.link|escape:'html':'UTF-8'}" title="{l s='View'}">
+							{l s='Voir la fiche produit'}
+						</a>
 					{hook h='displayProductListReviews' product=$product}
 					<p class="product-desc" itemprop="description">
 						{$product.description_short|strip_tags:'UTF-8'|truncate:360:'...'}
@@ -117,8 +124,8 @@
 						{/if}
 					</div>
 					{/if}
-					<div class="button-container">
-						{if ($product.id_product_attribute == 0 || (isset($add_prod_display) && ($add_prod_display == 1))) && $product.available_for_order && !isset($restricted_country_mode) && $product.minimal_quantity <= 1 && $product.customizable != 2 && !$PS_CATALOG_MODE}
+					<!-- <div class="button-container"> -->
+						<!-- {if ($product.id_product_attribute == 0 || (isset($add_prod_display) && ($add_prod_display == 1))) && $product.available_for_order && !isset($restricted_country_mode) && $product.minimal_quantity <= 1 && $product.customizable != 2 && !$PS_CATALOG_MODE}
 							{if ($product.allow_oosp || $product.quantity > 0)}
 								{if isset($static_token)}
 									<a class="button ajax_add_to_cart_button btn btn-default" href="{$link->getPageLink('cart',false, NULL, "add=1&amp;id_product={$product.id_product|intval}&amp;token={$static_token}", false)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Add to cart'}" data-id-product="{$product.id_product|intval}">
@@ -134,11 +141,11 @@
 									<span>{l s='Add to cart'}</span>
 								</span>
 							{/if}
-						{/if}
-						<a itemprop="url" class="button lnk_view btn btn-default" href="{$product.link|escape:'html':'UTF-8'}" title="{l s='View'}">
-							<span>{l s='More'}</span>
-						</a>
-					</div>
+						{/if} -->
+						<!-- <a itemprop="url" class="button lnk_view btn btn-default" href="{$product.link|escape:'html':'UTF-8'}" title="{l s='View'}">
+							<span>{l s='Voir la fiche produit'}</span>
+						</a> -->
+					<!-- </div> -->
 					{if isset($product.color_list)}
 						<div class="color-list-container">{$product.color_list} </div>
 					{/if}
