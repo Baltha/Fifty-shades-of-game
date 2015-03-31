@@ -3,9 +3,7 @@
 .sf-menu > li > a, .shopping_cart > a:first-child:before{
   color: #fff !important;
 }
-#homepage-slider{
-  height: 466px;
-}
+
 #homepage-slider .homeslider-description{
   width: 300px;
 }
@@ -63,6 +61,9 @@
     padding-bottom: 2px;
     background-color: #fff;
     color: #828282;
+}
+#homepage-slider .bx-wrapper img{
+  pointer-events: none;
 }
 .newsletter-input:placeholder{content: 'Saisissez votre email';}
 
@@ -135,6 +136,16 @@ ul.product_list.grid > li.hovered .supplier_logo{
   position: absolute;
   top: 94px;
   left: 107px;
+}
+.shopping_cart > a:first-child{
+  margin-top: 15px;
+}
+#header_logo .login{
+    color: #fff;
+  position: absolute;
+  text-decoration: underline;
+  top: 32px;
+  right: 62px;
 }
 /*
 

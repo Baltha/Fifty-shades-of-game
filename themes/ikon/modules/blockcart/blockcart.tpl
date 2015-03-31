@@ -48,6 +48,9 @@
 				<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
 			{/if}
 		</a>
+		<a class="login" href="http://localhost/prestashop/mon-compte" rel="nofollow" title="Login to your customer account">
+										Connexion
+									</a>
 		{if !$PS_CATALOG_MODE}
 			<div class="cart_block block exclusive">
 				<div class="block_content">
