@@ -49,6 +49,7 @@
 				<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
 			{/if}
 		</a>
+		
 		{if !$PS_CATALOG_MODE}
 			<div class="cart_block block exclusive">
 				<div class="block_content">

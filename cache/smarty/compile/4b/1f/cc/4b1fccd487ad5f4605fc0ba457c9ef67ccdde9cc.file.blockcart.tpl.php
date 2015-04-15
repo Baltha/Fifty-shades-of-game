@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-23 16:43:15
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-31 14:55:53
          compiled from "C:\wamp\www\prestashop\themes\ikon\modules\blockcart\blockcart.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1154355101119b9ac71-88128859%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4b1fccd487ad5f4605fc0ba457c9ef67ccdde9cc' => 
     array (
       0 => 'C:\\wamp\\www\\prestashop\\themes\\ikon\\modules\\blockcart\\blockcart.tpl',
-      1 => 1427125393,
+      1 => 1427805723,
       2 => 'file',
     ),
   ),
@@ -91,6 +91,9 @@ if (!is_callable('smarty_function_counter')) include 'C:\\wamp\\www\\prestashop\
 				<span class="block_cart_collapse<?php if (isset($_smarty_tpl->tpl_vars['colapseExpandStatus']->value)&&$_smarty_tpl->tpl_vars['colapseExpandStatus']->value=='collapsed') {?> unvisible<?php }?>">&nbsp;</span>
 			<?php }?>
 		</a>
+		<a class="login" href="http://localhost/prestashop/mon-compte" rel="nofollow" title="Login to your customer account">
+										Connexion
+									</a>
 		<?php if (!$_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value) {?>
 			<div class="cart_block block exclusive">
 				<div class="block_content">

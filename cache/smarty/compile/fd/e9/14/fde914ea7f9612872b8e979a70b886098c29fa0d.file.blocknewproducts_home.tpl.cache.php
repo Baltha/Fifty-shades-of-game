@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-23 14:11:48
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-30 12:28:07
          compiled from "C:\wamp\www\prestashop\themes\ikon\modules\blocknewproducts\blocknewproducts_home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1691255101114db62d9-42773022%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -15,14 +15,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_55101114dfc558_09984528',
   'variables' => 
   array (
     'new_products' => 0,
     'active_ul' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55101114dfc558_09984528',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55101114dfc558_09984528')) {function content_55101114dfc558_09984528($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include 'C:\\wamp\\www\\prestashop\\tools\\smarty\\plugins\\function.counter.php';
 ?>

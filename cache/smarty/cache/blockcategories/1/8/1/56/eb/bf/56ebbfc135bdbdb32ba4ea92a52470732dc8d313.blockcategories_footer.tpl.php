@@ -17,11 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '1999455101115900b92-00884331',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_551689325abfc1_89798995',
+  'unifunc' => 'content_552e393b4282d4_91797678',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_551689325abfc1_89798995')) {function content_551689325abfc1_89798995($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_552e393b4282d4_91797678')) {function content_552e393b4282d4_91797678($_smarty_tpl) {?>
 <!-- Block categories module -->
 <section class="blockcategories_footer footer-block col-xs-12 col-sm-2">
 	<h4>Catégories</h4>
@@ -29,79 +29,74 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="list">
 			<ul class="tree dhtml">
 												
-<li class="last">
-	<a 
-	href="http://localhost/prestashop/3-femmes" title="Vous trouverez ici toutes les collections mode pour femmes.  
- Cette catégorie regroupe tous les basiques de votre garde-robe et bien plus encore : 
- chaussures, accessoires, T-shirts imprimés, robes élégantes et jeans pour femmes !">
-		Femmes
-	</a>
-			<ul>
-												
 <li >
 	<a 
-	href="http://localhost/prestashop/4-tops" title="Choisissez parmi une large sélection de T-shirts à manches courtes, longues ou 3/4, de tops, de débardeurs, de chemisiers et bien plus encore. 
- Trouvez la coupe qui vous va le mieux !">
-		Tops
-	</a>
-			<ul>
-												
-<li >
-	<a 
-	href="http://localhost/prestashop/5-t-shirts" title="Les must have de votre garde-robe : découvrez les divers modèles ainsi que les différentes 
- coupes et couleurs de notre collection !">
-		T-shirts
+	href="http://localhost/prestashop/12-action" title="">
+		Action
 	</a>
 	</li>
 
-																
-<li class="last">
-	<a 
-	href="http://localhost/prestashop/7-chemisiers" title="Coordonnez vos accessoires à vos chemisiers préférés, pour un look parfait.">
-		Chemisiers
-	</a>
-	</li>
-
-									</ul>
-	</li>
-
-																
-<li class="last">
-	<a 
-	href="http://localhost/prestashop/8-robes" title="Trouvez votre nouvelle pièce préférée parmi une large sélection de robes décontractées, d&#039;été et de soirée ! 
- Nous avons des robes pour tous les styles et toutes les occasions.">
-		Robes
-	</a>
-			<ul>
-												
-<li >
-	<a 
-	href="http://localhost/prestashop/9-robes-decontractees" title="Vous cherchez une robe pour la vie de tous les jours ? Découvrez 
- notre sélection de robes et trouvez celle qui vous convient.">
-		Robes décontractées
-	</a>
-	</li>
-
+							
 																
 <li >
 	<a 
-	href="http://localhost/prestashop/10-robes-soiree" title="Trouvez la robe parfaite pour une soirée inoubliable !">
-		Robes de soirée
+	href="http://localhost/prestashop/13-aventure" title="">
+		Aventure
 	</a>
 	</li>
 
+							
+																
+<li >
+	<a 
+	href="http://localhost/prestashop/14-course" title="">
+		Course
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://localhost/prestashop/15-fps" title="">
+		Fps
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://localhost/prestashop/16-gestion" title="">
+		Gestion
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://localhost/prestashop/17-mmo" title="">
+		Mmo
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://localhost/prestashop/18-rpg" title="">
+		Rpg
+	</a>
+	</li>
+
+							
 																
 <li class="last">
 	<a 
-	href="http://localhost/prestashop/11-robes-ete" title="Courte, longue, en soie ou imprimée, trouvez votre robe d&#039;été idéale !">
-		Robes d&#039;été
+	href="http://localhost/prestashop/19-strategie" title="">
+		Stratégie
 	</a>
-	</li>
-
-									</ul>
-	</li>
-
-									</ul>
 	</li>
 
 							

@@ -29,7 +29,7 @@
 	<h4 >{l s='Follow us on Facebook' mod='blockfacebook'}</h4>
 	<div class="facebook-fanbox">
 		<div class="fb-like-box" data-href="{$facebookurl|escape:'html':'UTF-8'}" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false">
-			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/MyPresta&amp;width=332&amp;height=253&amp;colorscheme=light&amp;show_faces=1&amp;show_border=false&amp;stream=0&amp;header=0&amp;appId=112465995526913" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:332px; height:233px;" allowtransparency="true"></iframe>
+			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/50shadesofgames&amp;width=332&amp;height=253&amp;colorscheme=light&amp;show_faces=1&amp;show_border=false&amp;stream=0&amp;header=0&amp;appId=112465995526913" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:332px; height:233px;" allowtransparency="true"></iframe>
 		</div>
 	</div>
 </div>

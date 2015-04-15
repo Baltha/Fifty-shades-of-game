@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-23 16:40:00
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-31 15:37:30
          compiled from "C:\wamp\www\prestashop\themes\ikon\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:186655510111a97fa45-85085767%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '12dc556f97349178d9bd93304c20d336e3fdd9a7' => 
     array (
       0 => 'C:\\wamp\\www\\prestashop\\themes\\ikon\\header.tpl',
-      1 => 1427125198,
+      1 => 1427808995,
       2 => 'file',
     ),
   ),
@@ -159,6 +159,7 @@ $_smarty_tpl->tpl_vars['media']->_loop = true;
 "<?php }?><?php if ($_smarty_tpl->tpl_vars['logo_image_height']->value) {?> height="<?php echo $_smarty_tpl->tpl_vars['logo_image_height']->value;?>
 "<?php }?>/>
 									</a>
+									
 									<?php if (isset($_smarty_tpl->tpl_vars['HOOK_TOP']->value)) {?><?php echo $_smarty_tpl->tpl_vars['HOOK_TOP']->value;?>
 <?php }?>
 								</div>

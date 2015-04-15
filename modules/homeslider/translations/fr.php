@@ -55,6 +55,7 @@ $_MODULE['<{homeslider}prestashop>homeslider_71063fd397d237e563089c22dd8b69e8'] 
 $_MODULE['<{homeslider}prestashop>homeslider_6a5aa2542c21debccd82b2e0038c3d1a'] = 'Cette diapositive est utilisée par plusieurs boutiques ! Toutes les boutiques qui l\'utilisent appliqueront les modifications faites ici';
 $_MODULE['<{homeslider}prestashop>form_92fbf0e5d97b8afd7e73126b52bdc4bb'] = 'Choisissez un fichier';
 $_MODULE['<{homeslider}prestashop>list_c82324ebbcea34f55627a897b37190e3'] = 'Liste des diapositives';
+$_MODULE['<{homeslider}prestashop>list_ef61fb324d729c341ea8ab9901e23566'] = 'Ajouter';
 $_MODULE['<{homeslider}prestashop>list_379a88861412d686cfaf475c84a24920'] = 'Diapositive partagée';
 $_MODULE['<{homeslider}prestashop>list_7dce122004969d56ae2e0245cb754d35'] = 'Modifier';
 $_MODULE['<{homeslider}prestashop>list_f2a6c498fb90ee345d997f888fce3b18'] = 'Supprimer';

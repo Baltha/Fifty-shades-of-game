@@ -26,6 +26,7 @@
 var responsiveflag = false;
 
 $(document).ready(function(){
+
 	highdpiInit();
 	responsiveResize();
 	$(window).resize(responsiveResize);
